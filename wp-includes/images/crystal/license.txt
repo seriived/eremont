@@ -1,0 +1,20 @@
+<<<<<<< HEAD
+Crystal Project Icons
+by Everaldo Coelho
+http://everaldo.com
+
+Released under LGPL
+
+Modified February 2008
+for WordPress
+=======
+Crystal Project Icons
+by Everaldo Coelho
+http://everaldo.com
+
+Released under LGPL
+
+Modified February 2008
+for WordPress
+>>>>>>> 47f2894c235877466505d680e39a557782c4bf73
+http://wordpress.org

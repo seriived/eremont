@@ -1,0 +1,185 @@
+/**
+ * jQuery lightBox plugin
+ * This jQuery plugin was inspired and based on Lightbox 2 by Lokesh Dhakar (http://www.huddletogether.com/projects/lightbox2/)
+ * and adapted to me for use like a plugin from jQuery.
+ * @name jquery-lightbox-0.5.css
+ * @author Leandro Vieira Pinho - http://leandrovieira.com
+ * @version 0.5
+ * @date April 11, 2008
+ * @category jQuery plugin
+ * @copyright (c) 2008 Leandro Vieira Pinho (leandrovieira.com)
+ * @license CC Attribution-No Derivative Works 2.5 Brazil - http://creativecommons.org/licenses/by-nd/2.5/br/deed.en_US
+ * @example Visit http://leandrovieira.com/projects/jquery/lightbox/ for more informations about this jQuery plugin
+ */
+ /* jQuery lightBox plugin - Gallery style */
+	.gallery {
+		padding: 0px;
+		/* width: 700px; */
+	}
+	.gallery ul { list-style: none; }
+	.gallery ul li { display: inline; }
+	.gallery ul img {
+		border: 5px solid #3e3e3e;
+		border-width: 5px 5px 20px;
+	}
+	.gallery ul a:hover img {
+		border: 5px solid #fff;
+		border-width: 5px 5px 20px;
+		color: #fff;
+	}
+	.gallery ul a:hover { color: #fff; }
+ 
+ 
+ 	.gallery2 {
+		padding: 0px;
+		/* width: 700px; */
+	}
+	.gallery2 ul { list-style: none; }
+	.gallery2 ul li { display: inline; }
+	.gallery2 ul img {
+		border: 5px solid #3e3e3e;
+		border-width: 5px 5px 20px;
+	}
+	.gallery2 ul a:hover img {
+		border: 5px solid #fff;
+		border-width: 5px 5px 20px;
+		color: #fff;
+	}
+	.gallery2 ul a:hover { color: #fff; }
+
+ 
+ 
+ 
+ 
+#jquery-overlay {
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 9000;
+	width: 100%;
+	height: 500px;
+}
+#jquery-lightbox {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	z-index: 10000;
+	text-align: center;
+	line-height: 0;
+}
+#jquery-lightbox a img { border: none; }
+#lightbox-container-image-box {
+	position: relative;
+	background-color: #fff;
+	width: 250px;
+	height: 250px;
+	margin: 0 auto;
+	padding-bottom:32px;
+	margin-top:-40px;
+}
+#lightbox-container-image { /*padding: 10px; */padding:10px 0 3px 0;}
+#lightbox-loading {
+	position: absolute;
+	top: 40%;
+	left: 0%;
+	height: 25%;
+	width: 100%;
+	text-align: center;
+	line-height: 0;
+}
+#lightbox-nav {
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 100%;
+	width: 100%;
+	z-index: 1000;
+}
+#lightbox-container-image-box > #lightbox-nav { left: 0; }
+#lightbox-nav a { outline: none;}
+#lightbox-nav-btnPrev, #lightbox-nav-btnNext {
+	width: 49%;/*для IE*/
+	height: 100%;
+	zoom: 1;
+	display: block;
+	margin-top:32px;
+}
+#lightbox-nav-btnPrev { 
+	left: 0; 
+	float: left;
+}
+#lightbox-nav-btnNext { 
+	right: 0; 
+	float: right;
+}
+#lightbox-container-image-data-box {
+	background-color: #fff;
+	margin: 0 auto;
+	line-height: 1.4em;
+	overflow: auto;
+	width: 100%;
+	padding: 0 0 0;
+	position: relative;
+	z-index: 10000;
+}
+#lightbox-container-image-data {
+	padding: 0 5px; 
+	height: 25px;
+	/* color: #666;  */
+}
+#lightbox-container-image-data #lightbox-image-details { 
+	width: 70%; 
+	float: left; 
+	text-align: left; 
+}	
+#lightbox-image-details-caption { zoom:1; font-weight: bold; }
+#lightbox-image-details-currentNumber {
+	display: block; 
+	clear: left; 
+	padding-left: 10px;
+	padding-bottom: 1.0em;	
+	white-space: nowrap;
+}			
+#lightbox-secNav-btnClose {
+	position:relative;
+	z-index:10000;
+	width: 17px; 
+	float: right;
+	padding:0 0.7em 10px 0;
+	margin-right:-5px;
+}
+
+#play, #pause{
+	/* display:block; */
+	position:relative;
+	left:0;
+	top:0;
+	width:128px;
+	padding-left:20px;
+	height:15px;
+	/* margin-left:30px; */ 
+	text-decoration:underline;
+	cursor:pointer;
+	white-space: nowrap;
+}
+
+
+#play, #pause{
+	/* display:block;
+	position:absolute;
+	left:50%;
+	top:0;
+	width:150px;
+	padding-left:20px;
+	height:15px;
+	margin-left:-75px;
+	text-decoration:underline;
+	cursor:pointer; */
+}
+#play{
+	background: url(/bitrix/templates/.default/images/play.gif) left top no-repeat;
+}
+#pause{
+	background: url(/bitrix/templates/.default/images/pause.gif) left top no-repeat;
+}
