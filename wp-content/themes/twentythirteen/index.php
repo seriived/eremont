@@ -162,26 +162,34 @@ get_header(); ?>
 							</noindex>
 
 						</div>
-						<div class="line_new_razdel"><img id="bxid_971829" height="20" width="156"
-						                                  src="<?php echo get_template_directory_uri() ?>/images/elit.gif">
+						<?php
+						$args = array(
+							'posts_per_page'   => 1,
+							'offset'           => 0,
+							'category'         => 'rubrics',
+							'orderby'          => 'post_date',
+							'order'            => 'DESC',
+							'post_type'        => 'work',
+							'post_status'      => 'publish',
+							'suppress_filters' => true
+						);
+						$posts_array = get_posts( $args ,true);
+						$large_image_url = wp_get_attachment_image_src( get_post_thumbnail_id($posts_array[0]->ID), 'large');
+						?>
+						<div class="line_new_razdel">
+							<img id="bxid_971829" height="20" width="156" src="<?php echo get_template_directory_uri() ?>/images/elit.gif">
 						</div>
-						<div style="padding-left: 25px; height: 90px; margin-top: 10px;"><a id="bxid_177374"
-						                                                                    href="http://www.eremont.ru/complex/"><img
-									id="bxid_29" border="0"
-									src="<?php echo get_template_directory_uri() ?>/images/pic_01.jpg"
-									height="82" width="154"></a></div>
-						<div style="padding: 18px 25px 0px;">В этом разделе публикуются дизайн-проекты и фотографии
-							текущего и законченного ремонта квартир в известных новостройках Москвы. <br>
-							<br>
-							Представляем дизайн интерьеров квартир в «Гранд-Парке», «Триумф-Паласе», «Mirax park»,
-							других жилых комплексах.
-							<div style="padding: 5px 0pt 15px;"><a id="bxid_750411"
-							                                       href="http://www.eremont.ru/complex/">подробнее</a>
-								<a id="bxid_602296" href="http://www.eremont.ru/complex/"><img id="bxid_308421"
-								                                                               src="<?php echo get_template_directory_uri() ?>/images/acciya_but_01.gif"
-								                                                               align="absmiddle"
-								                                                               border="0" height="14"
-								                                                               width="15"></a></div>
+						<div style="padding-left: 25px; height: 90px; margin-top: 10px;">
+							<a id="bxid_177374" href="<?php echo $posts_array[0]->guid?>">
+								<img id="bxid_29" border="0" src="<?php echo $large_image_url[0];?>" height="82" width="154"></a></div>
+						<div style="padding: 18px 25px 0px;">
+							<?php echo $posts_array[0]->post_excerpt;?>
+							<div style="padding: 5px 0pt 15px;">
+								<a id="bxid_750411" href="<?php echo $posts_array[0]->guid?>">подробнее</a>
+								<a id="bxid_602296" href="http://www.eremont.ru/complex/">
+									<img id="bxid_308421" src="<?php echo get_template_directory_uri() ?>/images/acciya_but_01.gif" align="absmiddle" border="0" height="14" width="15">
+								</a>
+							</div>
 						</div>
 						<br>
 					</div>
@@ -224,104 +232,7 @@ get_header(); ?>
 					</div>
 				</div>
 
-				<div class="advantage-1">
-					<div class="advantage-22012">
-						<div class="advantage-text-1">
-							<noindex>
-								<b style="color:#0d4d94;">Почему выбирают нас:</b><br>
-								1. Дизайн-проект <a href="http://www.eremont.ru/news/28825/">бесплатно</a>.
-								<br>
-								2. <span class="help-link-oo">Опыт<div class="help-link-window">
-										<div class="help-link-container help-link-container-advantage">Год основания
-											1996-й
-										</div>
-										<div class="help-link-shadow help-link-shadow-advantage"></div>
-									</div></span> 17 лет, качество, <span class="help-link-oo">гарантия<div
-										class="help-link-window">
-										<div class="help-link-container help-link-container-advantage">Гарантия 3 года,
-											все объекты застрахованы. <br><br>Строгое соблюдения технологий,
-											предписанных производителями материалов; наличие в компании службы контроля
-											качества, осуществляющей мониторинг работ на всех этапах строительства. <br><br>Качество
-											работ подтверждено независимыми экспертизами.
-										</div>
-										<div class="help-link-shadow help-link-shadow-advantage"></div>
-									</div></span> 3 года.
-								<br>
-								3. Достойные, <span class="help-link-oo">адекватные<div class="help-link-window">
-										<div class="help-link-container help-link-container-advantage">Высокое качество
-											диктует цены. При этом они у нас - средние в Москве.
-										</div>
-										<div class="help-link-shadow help-link-shadow-advantage"></div>
-									</div></span> цены. Смета <span class="help-link-oo">окончательная<div
-										class="help-link-window">
-										<div class="help-link-container help-link-container-advantage">Реальная смета по
-											дизайн-проекту, возможность рассчитать бюджет ремонта с точностью 5%.
-											<br><br>При отсутствии внесения изменений в проектную документацию стоимость
-											строительных и отделочных работ не изменяется
-										</div>
-										<div class="help-link-shadow help-link-shadow-advantage"></div>
-									</div></span>.
-								<br>
-								4. Проектирование, согласование, комплектация
-								<br>
-								&nbsp;&nbsp;&nbsp; в полном <span class="help-link-oo">объеме<div
-										class="help-link-window">
-										<div class="help-link-container help-link-container-advantage">Изобретение и
-											реализация в одних руках, вам не придется искать крайних и виноватых.
-											Дизайн-проект и полный спектр инженерных проектов в одной фирме – это
-											удобно! <br><br>Отдел снабжения и комплектации осуществляет своевременную
-											закупку и поставку у лучших поставщиков по конкурентным ценам.
-										</div>
-										<div class="help-link-shadow help-link-shadow-advantage"></div>
-									</div></span>.
-								<br>
-								5. <span class="help-link-oo">Выезд<div class="help-link-window">
-										<div class="help-link-container help-link-container-advantage">Мы готовы в вами
-											встречаться в любой точке Москвы и Московской области
-										</div>
-										<div class="help-link-shadow help-link-shadow-advantage"></div>
-									</div></span> менеджеров и дизайнеров к заказчику.
-								<br>
-								6. <span class="help-link-oo">Демонстрация<div class="help-link-window">
-										<div class="help-link-container help-link-container-advantage">Качество можно
-											посмотреть на любой стадии работ, всегда более 20 объектов в работе:
-											квартиры, дома, офисы, рестораны, клиники, развл.центры и пр. <br><br>У нас
-											от заказчика нет секретов, мы предоставим клиенту любую информацию для того,
-											чтобы он смог принять правильное решение
-										</div>
-										<div class="help-link-shadow help-link-shadow-advantage"></div>
-									</div></span> объектов на разных этапах работ.
-								<br>
-								7. Стабильный профессиональный <span class="help-link-oo">коллектив<div
-										class="help-link-window">
-										<div class="help-link-container help-link-container-advantage">В компании
-											трудится более 300 человек. <br><br>Мы гордимся, что более 60 из них в нашем
-											коллективе уже свыше 10 лет. <br><br>Залог успеха в нашей работе – это
-											профессиональные рабочие. <br><br>Работы выполняются согласно СНиП и ГОСТ.
-											На объектах рабочие не проживают, труд гастарбайтеров не применяется.
-											<br><br>Есть четко <b>структурированные отделы</b>: по электрике,
-											сантехнике, умному дому, комплектации и т.д.
-										</div>
-										<div class="help-link-shadow help-link-shadow-advantage"></div>
-									</div></span>.
-								<br>
-								8. Использование <span class="help-link-oo">современных<div class="help-link-window">
-										<div class="help-link-container help-link-container-advantage">Компания
-											производит постоянное обучение персонала всем новым технологиям и
-											материалам. <br><br>Для наших клиентов «умный» дом давно не новинка, а
-											повседневная необходимость.
-											<br><br>Работы выполняют только высококвалифицированные специалисты с
-											использованием современного оборудования. <br><br>Использование современных
-											технологий и материалов позволяет давать длительную гарантию.
-										</div>
-										<div class="help-link-shadow help-link-shadow-advantage"></div>
-									</div></span> технологий и материалов.<br>
-								<!--9. Независимые оценки, рекомендации <a href="http://www.eremont.ru/about/remont-f.html">конкурентов</a>.-->
-
-							</noindex>
-						</div>
-					</div>
-				</div>
+				<?php get_template_part('_part','advantage')?>
 			</td>
 			<td width="107" align="center" valign="top">
 				<div>
@@ -456,118 +367,7 @@ get_header(); ?>
 	<div style="height: 195px;" id="div_height">
 		<!--	-->
 	</div>
-	<table width="100%" border="0" cellspacing="0" cellpadding="0">
-		<tbody>
-		<tr>
-			<td width="74" valign="top"><a href="http://www.eremont.ru/gallery/36/36782/"><img
-						src="<?php echo get_template_directory_uri() ?>/images/70.jpg"
-						border="0" class="img_ramka" alt="" width="70" height="70"></a></td>
-			<td valign="top" class="main_news">
-				<a href="http://www.eremont.ru/gallery/36/36782/">Квартира на ул. Талалихина</a>
-				<br>
-				Квартира в современном доме для семьи из 5 человек. По плану застройщика приватная зона
-				включала в себя 2 комнаты и санузел. В процессе перепланировки появились: спальня,
-				санузел, гардеробная и 2 детских комнаты для мальчика, и двух девочек. Красный плинтус
-				стягивает и подбирает все помещения общего назначения как шнур, не давая распадаться на
-				отдельные зоны.<br>
-			</td>
-		</tr>
-		</tbody>
-	</table>
-	<img src="<?php echo get_template_directory_uri() ?>/images/pixel.gif"
-	     alt="" width="40" height="1" border="0">
-
-	<div class="line_news"><!-- --></div>
-	<table width="100%" border="0" cellspacing="0" cellpadding="0">
-		<tbody>
-		<tr>
-			<td width="74" valign="top"><a href="http://www.eremont.ru/gallery/36/36096/"><img
-						src="<?php echo get_template_directory_uri() ?>/images/70_2.jpg"
-						border="0" class="img_ramka" alt="" width="70" height="70"></a></td>
-			<td valign="top" class="main_news">
-				<a href="http://www.eremont.ru/gallery/36/36096/">Квартира на ул. Сосновая аллея</a>
-				<br>
-				Квартира в доме рядом с парком «Покровское-Стрешнево», общая площадь 150 кв.м, высота
-				потолка 3.09 м.
-			</td>
-		</tr>
-		</tbody>
-	</table>
-	<img src="<?php echo get_template_directory_uri() ?>/images/pixel.gif"
-	     alt="" width="40" height="1" border="0">
-
-	<div class="line_news"><!-- --></div>
-	<table width="100%" border="0" cellspacing="0" cellpadding="0">
-		<tbody>
-		<tr>
-			<td width="74" valign="top"><a href="http://www.eremont.ru/gallery/36/34938/"><img
-						src="<?php echo get_template_directory_uri() ?>/images/70(1).jpg"
-						border="0" class="img_ramka" alt="" width="70" height="70"></a></td>
-			<td valign="top" class="main_news">
-				<a href="http://www.eremont.ru/gallery/36/34938/">Квартира на ул. 1-я
-					Тверская-Ямская</a>
-				<br>
-				Дизайн интерьера двухкомнатной квартиры 50 кв.м, в доме рядом со станцией метро
-				"Маяковская".
-			</td>
-		</tr>
-		</tbody>
-	</table>
-	<img src="<?php echo get_template_directory_uri() ?>/images/pixel.gif"
-	     alt="" width="40" height="1" border="0">
-
-	<div class="line_news"><!-- --></div>
-	<table width="100%" border="0" cellspacing="0" cellpadding="0">
-		<tbody>
-		<tr>
-			<td width="74" valign="top"><a href="http://www.eremont.ru/gallery/36/34165/"><img
-						src="<?php echo get_template_directory_uri() ?>/images/70x70.jpg"
-						border="0" class="img_ramka" alt="" width="70" height="70"></a></td>
-			<td valign="top" class="main_news">
-				<a href="http://www.eremont.ru/gallery/36/34165/">Квартира на ул. Новаторов</a>
-				<br>
-				Дизайн и ремонт квартиры площадью 83 кв.м на ул. Новаторов, г.Москва
-			</td>
-		</tr>
-		</tbody>
-	</table>
-	<img src="<?php echo get_template_directory_uri() ?>/images/pixel.gif"
-	     alt="" width="40" height="1" border="0">
-
-	<div class="line_news"><!-- --></div>
-	<table width="100%" border="0" cellspacing="0" cellpadding="0">
-		<tbody>
-		<tr>
-			<td width="74" valign="top"><a href="http://www.eremont.ru/gallery/36/34037/"><img
-						src="<?php echo get_template_directory_uri() ?>/images/70x70(1).jpg"
-						border="0" class="img_ramka" alt="" width="70" height="70"></a></td>
-			<td valign="top" class="main_news">
-				<a href="http://www.eremont.ru/gallery/36/34037/">Квартира в ЖК «Квартал»</a>
-				<br>
-				Дизайн и ремонт квартиры на Ленинском проспекте, 185 кв.м.
-			</td>
-		</tr>
-		</tbody>
-	</table>
-	<img src="<?php echo get_template_directory_uri() ?>/images/pixel.gif"
-	     alt="" width="40" height="1" border="0">
-
-	<div class="line_news"><!-- --></div>
-	<table width="100%" border="0" cellspacing="0" cellpadding="0">
-		<tbody>
-		<tr>
-			<td width="74" valign="top"><a href="http://www.eremont.ru/gallery/36/33739/"><img
-						src="<?php echo get_template_directory_uri() ?>/images/x70.jpg"
-						border="0" class="img_ramka" alt="" width="70" height="70"></a></td>
-			<td valign="top" class="main_news">
-				<a href="http://www.eremont.ru/gallery/36/33739/">Квартира в ЖК «Каскад»-2</a>
-				<br>
-				Дизайн-проект и ремонт еще одной квартиры в жилом комплексе. Площадь квартиры 137,8
-				кв.м.
-			</td>
-		</tr>
-		</tbody>
-	</table>
+<?php get_template_part('_part','new_works');?>
 	<img src="<?php echo get_template_directory_uri() ?>/images/pixel.gif"
 	     alt="" width="40" height="1" border="0">
 
@@ -628,16 +428,7 @@ get_header(); ?>
 			<tr>
 				<td style="padding-right:53px;">
 
-					<noindex>
-						<div class="interia-awards-2012-index">
-							<div><span></span></div>
-							<h2>Наш проект <a href="http://www.eremont.ru/gallery/52/31284/">«Дом в стиле Прованс»</a> в
-								<big>INTERIA AWARDS</big></h2>
-							<small>Это самый крупный и престижный всероссийский конкурс в области дизайна интерьеров
-								жилых и общественных помещений. <a href="http://www.eremont.ru/about/concours.html">Подробности</a>
-							</small>
-						</div>
-					</noindex>
+					<?php get_template_part('_part','reklama');?>
 					<h1>Дизайн интерьера и ремонт</h1>
 
 

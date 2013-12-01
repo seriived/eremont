@@ -546,6 +546,7 @@ function twentythirteen_customize_preview_js() {
 	wp_enqueue_script( 'twentythirteen-customizer', get_template_directory_uri() . '/js/theme-customizer.js', array( 'customize-preview' ), '20130226', true );
 }
 add_action( 'customize_preview_init', 'twentythirteen_customize_preview_js' );
+/*регистрация колонки "Цены дизайна"*/
 $args = array(
 	'name'          => __( 'Price design', 'price_design_left' ),
 	'id'            => 'price_design_left',
@@ -553,6 +554,7 @@ $args = array(
 	'class'         => '',
 );
 register_sidebar( $args );
+/*регистрация колонки "Цены ремонта"*/
 $args = array(
 	'name'          => __( 'Price remont', 'price_remont_left' ),
 	'id'            => 'price_remont_left',
@@ -560,3 +562,44 @@ $args = array(
 	'class'         => '',
 );
 register_sidebar( $args );
+/*регистрация постайпа "Работы"*/
+function work_register() {
+	$args = array(
+		'label' => __('Работы'),
+		'singular_label' => __('Работа'),
+		'public' => true,
+		'show_ui' => true,
+		'capability_type' => 'page',
+		'hierarchical' => true,
+		'menu_position' => 4,
+		'rewrite' => true,
+		'supports' => array('title','editor', 'thumbnail',  'page-attributes', 'excerpt')
+	);
+	register_post_type( 'work' , $args );
+}
+add_action( 'init', 'work_register' );
+/*регистрация таксонимии для постайпа "Работы"*/
+add_action( 'init', 'create_work_taxonomies', 0 );
+function create_work_taxonomies(){
+	$labels = array(
+		'name' => _x( 'Категории', 'taxonomy general name' ),
+		'singular_name' => _x( 'Категория', 'taxonomy singular name' ),
+		'search_items' =>  __( 'Поис категории' ),
+		'all_items' => __( 'Все категории' ),
+		'parent_item' => __( 'Родительская категория' ),
+		'parent_item_colon' => __( 'Родительская категория:' ),
+		'edit_item' => __( 'Редактировать категорию' ),
+		'update_item' => __( 'Обновить категорию' ),
+		'add_new_item' => __( 'Добавить новую категорию' ),
+		'new_item_name' => __( 'Новое имя категории' ),
+		'menu_name' => __( 'Категории' ),
+	);
+	// Добавляем древовидную таксономию 'genre' (как категории)
+	register_taxonomy('rubrics', array('work'), array(
+		'hierarchical' => true,
+		'labels' => $labels,
+		'show_ui' => true,
+		'query_var' => true,
+		'rewrite' => array( 'slug' => 'rubrics' ),
+	));
+}
