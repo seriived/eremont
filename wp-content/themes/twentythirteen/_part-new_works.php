@@ -29,10 +29,15 @@ foreach($posts_array as $work){
 			</a>
 		</td>
 		<td valign="top" class="main_news">
+			<a href="<?php echo $work->guid?>"><?php echo $work->post_title?></a></br>
 			<?php echo $work->post_excerpt;?>
 		</td>
 	</tr>
 	</tbody>
 </table>
+	<img src="<?php echo get_template_directory_uri() ?>/images/pixel.gif"
+	     alt="" width="40" height="1" border="0">
+
+	<div class="line_news"><!-- --></div>
 <?php }
 ?>
