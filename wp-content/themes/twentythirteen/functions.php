@@ -594,7 +594,7 @@ function create_work_taxonomies(){
 		'new_item_name' => __( 'Новое имя категории' ),
 		'menu_name' => __( 'Категории' ),
 	);
-	// Добавляем древовидную таксономию 'genre' (как категории)
+
 	register_taxonomy('rubrics', array('work'), array(
 		'hierarchical' => true,
 		'labels' => $labels,
@@ -603,3 +603,7 @@ function create_work_taxonomies(){
 		'rewrite' => array( 'slug' => 'rubrics' ),
 	));
 }
+function custom_admin_js() {
+	$url = get_option('siteurl');
+	$url = get_bloginfo('template_directory') . '/js/wp-admin.js';
+	echo '<script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script>'; } add_action('admin_head', 'custom_admin_js');

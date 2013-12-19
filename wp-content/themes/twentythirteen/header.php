@@ -11,7 +11,7 @@
 	padding-top: 1px;
 }</style>
 <![endif]-->
-
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
 <script type="text/javascript" async="" src="<?php echo get_template_directory_uri() ?>/js/ga.js"></script>
 <script language="JavaScript" src="<?php echo get_template_directory_uri() ?>/js/jquery.min.js"></script>
 <script language="JavaScript" src="<?php echo get_template_directory_uri() ?>/js/jquery.mousewheel.min.js"></script>
