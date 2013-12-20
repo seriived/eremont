@@ -41,66 +41,8 @@
 <link href="<?php echo get_template_directory_uri() ?>/css/styles.css" type="text/css" rel="stylesheet">
 <link href="<?php echo get_template_directory_uri() ?>/css/template_styles.css" type="text/css" rel="stylesheet">
 
-<script type="text/javascript" src="<?php echo get_template_directory_uri() ?>/js/core.js"></script>
-<script
-	type="text/javascript">(window.BX || top.BX).message({'LANGUAGE_ID': 'ru', 'FORMAT_DATE': 'DD.MM.YYYY', 'FORMAT_DATETIME': 'DD.MM.YYYY HH:MI:SS', 'COOKIE_PREFIX': 'VIRA_BITRIX_SM', 'USER_ID': '', 'SERVER_TIME': '1385796807', 'SERVER_TZ_OFFSET': '14400', 'USER_TZ_OFFSET': '0', 'USER_TZ_AUTO': 'Y', 'bitrix_sessid': 'd359833acab4be809d545475b4279b0a', 'SITE_ID': 'er'});
-	(window.BX || top.BX).message({'JS_CORE_LOADING': 'Загрузка...', 'JS_CORE_NO_DATA': '- Нет данных -', 'JS_CORE_WINDOW_CLOSE': 'Закрыть', 'JS_CORE_WINDOW_EXPAND': 'Развернуть', 'JS_CORE_WINDOW_NARROW': 'Свернуть в окно', 'JS_CORE_WINDOW_SAVE': 'Сохранить', 'JS_CORE_WINDOW_CANCEL': 'Отменить', 'JS_CORE_H': 'ч', 'JS_CORE_M': 'м', 'JS_CORE_S': 'с', 'JSADM_AI_HIDE_EXTRA': 'Скрыть лишние', 'JSADM_AI_ALL_NOTIF': 'Показать все', 'JSADM_AUTH_REQ': 'Требуется авторизация!', 'JS_CORE_WINDOW_AUTH': 'Войти', 'JS_CORE_IMAGE_FULL': 'Полный размер'});</script>
-<script type="text/javascript" src="<?php echo get_template_directory_uri() ?>/js/core_ajax.js"></script>
-<script type="text/javascript" src="<?php echo get_template_directory_uri() ?>/js/session.js"></script>
-<script type="text/javascript">
-	bxSession.Expand(1440, 'd359833acab4be809d545475b4279b0a', false, 'aa58651f817ce24149835c75e532b613');
-</script>
-
-<!--<base href="http://www.eremont.ru/">-->
-<base href=".">
 
 <script type="text/javascript" src="<?php echo get_template_directory_uri() ?>/js/main.js"></script>
-
-<script type="text/javascript">
-	var _gaq = _gaq || [];
-	_gaq.push(['_setAccount', 'UA-15872308-1']);
-	_gaq.push(['_addOrganic', 'images.yandex.ru', 'q', true]);
-	_gaq.push(['_addOrganic', 'blogsearch.google.ru', 'q', true]);
-	_gaq.push(['_addOrganic', 'google.com.ua', 'q', true]);
-	_gaq.push(['_addOrganic', 'blogs.yandex.ru', 'text', true]);
-	_gaq.push(['_addOrganic', 'go.mail.ru', 'q']);
-	_gaq.push(['_addOrganic', 'nova.rambler.ru', 'query']);
-	_gaq.push(['_addOrganic', 'webalta.ru', 'q']);
-	_gaq.push(['_addOrganic', 'aport.ru', 'r']);
-	_gaq.push(['_addOrganic', 'search.livetool.ru', 'text']);
-	_gaq.push(['_addOrganic', 'poisk.ngs.ru', 'q']);
-	_gaq.push(['_addOrganic', 'poisk.ru', 'text']);
-	_gaq.push(['_addOrganic', 'km.ru', 'sq']);
-	_gaq.push(['_addOrganic', 'liveinternet.ru', 'ask']);
-	_gaq.push(['_addOrganic', 'quintura.ru', 'request']);
-	_gaq.push(['_addOrganic', 'search.qip.ru', 'query']);
-	_gaq.push(['_addOrganic', 'gde.ru', 'keywords']);
-	_gaq.push(['_addOrganic', 'gogo.ru', 'q']);
-	_gaq.push(['_addOrganic', 'ru.yahoo.com', 'p']);
-	_gaq.push(['_addOrganic', 'akavita.by', 'z']);
-	_gaq.push(['_addOrganic', 'tut.by', 'query']);
-	_gaq.push(['_addOrganic', 'all.by', 'query']);
-	_gaq.push(['_addOrganic', 'meta.ua', 'q']);
-	_gaq.push(['_addOrganic', 'bigmir.net', 'q']);
-	_gaq.push(['_addOrganic', 'i.ua', 'q']);
-	_gaq.push(['_addOrganic', 'online.ua', 'q']);
-	_gaq.push(['_addOrganic', 'a.ua', 's']);
-	_gaq.push(['_addOrganic', 'ukr.net', 'search_query']);
-	_gaq.push(['_addOrganic', 'search.com.ua', 'q']);
-	_gaq.push(['_addOrganic', 'search.ua', 'query']);
-	_gaq.push(['_addOrganic', 'search.ukr.net', 'search_query']);
-	_gaq.push(['_trackPageview']);
-	(function () {
-		var ga = document.createElement('script');
-		ga.type = 'text/javascript';
-		ga.async = true;
-		ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') +
-			'.google-analytics.com/ga.js';
-		var s = document.getElementsByTagName('script')[0];
-		s.parentNode.insertBefore(ga, s);
-	})();
-</script>
-
 <script type="text/javascript" src="<?php echo get_template_directory_uri() ?>/js/openapi.js"></script>
 
 <script type="text/javascript">

@@ -1,0 +1,22 @@
+<div align="right">
+	<br>
+	<noindex>
+		<table cellpadding="0" cellspacing="0" border="0">
+			<tbody><tr>
+				<td style="padding-right:10px;">
+					<div id="___plusone_0" style="text-indent: 0px; margin: 0px; padding: 0px; background-color: transparent; border-style: none; float: none; line-height: normal; font-size: 1px; vertical-align: baseline; display: inline-block; width: 90px; height: 20px; background-position: initial initial; background-repeat: initial initial;"><iframe frameborder="0" hspace="0" marginheight="0" marginwidth="0" scrolling="no" style="position: static; top: 0px; width: 90px; margin: 0px; border-style: none; left: 0px; visibility: visible; height: 20px;" tabindex="0" vspace="0" width="100%" id="I0_1387496400676" name="I0_1387496400676" src="https://apis.google.com/u/0/_/+1/fastbutton?usegapi=1&amp;bsv=o&amp;size=medium&amp;hl=ru&amp;origin=http%3A%2F%2Fwww.eremont.ru&amp;url=http%3A%2F%2Fwww.eremont.ru%2Fbegin%2F&amp;gsrc=3p&amp;ic=1&amp;jsh=m%3B%2F_%2Fscs%2Fapps-static%2F_%2Fjs%2Fk%3Doz.gapi.ru.WNSTDEfr69w.O%2Fm%3D__features__%2Fam%3DYQ%2Frt%3Dj%2Fd%3D1%2Frs%3DAItRSTPCmbgEc7WNWd5FNR72WZJmSVmgRw#_methods=onPlusOne%2C_ready%2C_close%2C_open%2C_resizeMe%2C_renderstart%2Concircled%2Cdrefresh%2Cerefresh&amp;id=I0_1387496400676&amp;parent=http%3A%2F%2Fwww.eremont.ru&amp;pfname=&amp;rpctoken=27698325" data-gapiattached="true" title="+1"></iframe></div>
+				</td>
+
+				<td>
+					<div id="vk_like" style="height: 22px; width: 180px; background-image: none; position: relative; clear: both; background-position: initial initial; background-repeat: initial initial;"><iframe name="fXD6c844" frameborder="0" src="http://vk.com/widget_like.php?app=2624022&amp;width=100%&amp;_ver=1&amp;page=0&amp;url=http%3A%2F%2Fwww.eremont.ru%2Fbegin%2F&amp;type=button&amp;verb=0&amp;color=&amp;title=%D0%A0%D0%B5%D0%BC%D0%BE%D0%BD%D1%82%20%D0%BF%D0%BE%D0%BC%D0%B5%D1%89%D0%B5%D0%BD%D0%B8%D0%B9%20-%20%D1%81%20%D1%87%D0%B5%D0%B3%D0%BE%20%D0%BD%D0%B0%D1%87%D0%B0%D1%82%D1%8C.%20%D0%98%D0%BD%D1%82%D0%B5%D1%80%D1%8C%D0%B5%D1%80%20%D0%B8%20%D0%B4%D0%B8%D0%B7%D0%B0%D0%B9%D0%BD%20%D0%BA%D0%B2%D0%B0%D1%80%D1%82%D0%B8%D1%80%20-%20%D0%92%D0%B8%D1%80%D0%B0-%D0%90%D1%80%D1%82%D0%A1%D1%82%D1%80%D0%BE%D0%B9&amp;description=&amp;image=&amp;text=&amp;h=22&amp;1430d3ae6e4" width="100%" height="22" scrolling="no" id="vkwidget1" style="overflow: hidden; height: 22px; width: 180px; z-index: 150;"></iframe></div> <script type="text/javascript"> VK.Widgets.Like("vk_like", {type: "button"}); </script>
+				</td>
+				<td style="padding-right:30px;">
+					<div class="fb-like fb_edge_widget_with_comment fb_iframe_widget" data-send="false" data-layout="button_count" data-width="150" data-show-faces="false" fb-xfbml-state="rendered"><span style="height: 20px; width: 107px;"><iframe id="fa50daad" name="f44cd7ea" scrolling="no" title="Like this content on Facebook." class="fb_ltr" src="http://www.facebook.com/plugins/like.php?api_key=214239318639084&amp;channel_url=http%3A%2F%2Fstatic.ak.facebook.com%2Fconnect%2Fxd_arbiter.php%3Fversion%3D28%23cb%3Df21d3de93%26domain%3Dwww.eremont.ru%26origin%3Dhttp%253A%252F%252Fwww.eremont.ru%252Ff1af6adc9%26relation%3Dparent.parent&amp;colorscheme=light&amp;extended_social_context=false&amp;href=http%3A%2F%2Fwww.eremont.ru%2Fbegin%2F&amp;layout=button_count&amp;locale=ru_RU&amp;node_type=link&amp;sdk=joey&amp;send=false&amp;show_faces=false&amp;width=150" style="border: none; overflow: hidden; height: 20px; width: 107px;"></iframe></span></div>
+				</td>
+				<td style="padding-right:5px;">
+					<iframe id="twitter-widget-0" scrolling="no" frameborder="0" allowtransparency="true" src="http://platform.twitter.com/widgets/tweet_button.1387492107.html#_=1387496400936&amp;count=horizontal&amp;id=twitter-widget-0&amp;lang=ru&amp;original_referer=http%3A%2F%2Fwww.eremont.ru%2Fbegin%2F&amp;size=m&amp;text=%D0%A0%D0%B5%D0%BC%D0%BE%D0%BD%D1%82%20%D0%BF%D0%BE%D0%BC%D0%B5%D1%89%D0%B5%D0%BD%D0%B8%D0%B9%20-%20%D1%81%20%D1%87%D0%B5%D0%B3%D0%BE%20%D0%BD%D0%B0%D1%87%D0%B0%D1%82%D1%8C.%20%D0%98%D0%BD%D1%82%D0%B5%D1%80%D1%8C%D0%B5%D1%80%20%D0%B8%20%D0%B4%D0%B8%D0%B7%D0%B0%D0%B9%D0%BD%20%D0%BA%D0%B2%D0%B0%D1%80%D1%82%D0%B8%D1%80%20-%20%D0%92%D0%B8%D1%80%D0%B0-%D0%90%D1%80%D1%82%D0%A1%D1%82%D1%80%D0%BE%D0%B9&amp;url=http%3A%2F%2Fwww.eremont.ru%2Fbegin%2F&amp;via=vira_ru" class="twitter-share-button twitter-tweet-button twitter-count-horizontal" title="Twitter Tweet Button" data-twttr-rendered="true" style="width: 139px; height: 20px;"></iframe>
+				</td>
+			</tr>
+			</tbody></table>
+	</noindex>
+</div>
